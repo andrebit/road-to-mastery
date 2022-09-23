@@ -1,0 +1,23 @@
+import { BreakPedal } from "./BreakPedal";
+import { Car } from "./Car";
+import { Engine } from "./Engine";
+import { GasPedal } from "./GasPedal";
+import { GasTank } from "./GasTank";
+import { Key } from "./Key";
+
+const breakPedal = new BreakPedal(false);
+const gasPedal = new GasPedal(false);
+const key = new Key(false);
+const gasTank = new GasTank(100);
+const engine = new Engine("fiat", 939393, gasTank);
+const car = new Car("fiat", 989849948484, 2022, engine, key, gasPedal, breakPedal);
+car.move(10);
+car.turn(true);
+car.breakPedal.press(true);
+car.move(10);
+car.breakPedal.press(false);
+car.gasPedal.press(true);
+console.log("Gas volume:",car.engine.gasTank.currentVolume);
+car.move(10);
+console.log("Gas Volume:",car.engine.gasTank.currentVolume);
+car.move(100);
