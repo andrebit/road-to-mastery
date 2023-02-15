@@ -1,6 +1,7 @@
 # Welcome to Road to Mastery 🚀 🥋
 
 Road to Mastery is a community where people with similar learning goals get together to explore, collaborate, practice, learn, share and lift each other to the moon, towards mastery.
+Test
 
 # 🔇 Core values & principles
 
